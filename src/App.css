@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=Noto+Sans+Sinhala:wght@300;400&display=swap');
+
+:root {
+  --color-cream: #F7F5F0;
+  --color-parchment: #F0EDE6;
+  --color-green-deep: #1A3C34;
+  --color-green-mid: #2A5A4E;
+  --color-green-light: #8FA89B;
+  --color-terracotta: #C07756;
+  --color-terracotta-light: #D69B7A;
+  --color-gold: #D4A056;
+  --color-charcoal: #2C2C2C;
+  --color-text: #3A3A3A;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Inter', sans-serif;
+  --transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-cream);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--color-green-deep);
+  margin: 0;
+  line-height: 1.1;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-sans);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.section-eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-terracotta);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  color: var(--color-green-deep);
+  line-height: 1.1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--color-terracotta);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--color-terracotta-light);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.btn-secondary:hover {
+  border-color: #fff;
+  background: rgba(255,255,255,0.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

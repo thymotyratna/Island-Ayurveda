@@ -1,0 +1,63 @@
+
+.diaspora {
+  padding: 140px 24px;
+  background: linear-gradient(160deg, #C07756 0%, #A85D3C 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.diaspora::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.diaspora-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.diaspora-content {
+  text-align: center;
+}
+
+.diaspora .section-eyebrow {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.diaspora-title {
+  color: #fff;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin-bottom: 40px;
+}
+
+.diaspora-quote {
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  font-style: italic;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 auto 40px;
+  max-width: 700px;
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  padding-left: 32px;
+  text-align: left;
+}
+
+.diaspora-body {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-weight: 300;
+  text-align: left;
+}

@@ -1,0 +1,67 @@
+
+.treatments {
+  padding: 120px 24px;
+  background: var(--color-green-deep);
+  color: var(--color-cream);
+}
+
+.treatments-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.treatments-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.treatments-header .section-eyebrow {
+  color: var(--color-gold);
+}
+
+.treatments-header .section-title {
+  color: #fff;
+}
+
+.treatments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.treatment-card {
+  background: var(--color-green-deep);
+  padding: 48px;
+  position: relative;
+  transition: background 0.4s ease;
+}
+
+.treatment-card:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.treatment-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.treatment-desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(247, 245, 240, 0.75);
+  font-weight: 300;
+  max-width: 320px;
+}
+
+.treatment-number {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--color-gold);
+  opacity: 0.6;
+}

@@ -1,0 +1,76 @@
+
+.doshas {
+  padding: 120px 24px;
+  background: linear-gradient(to bottom, var(--color-cream), #fff);
+}
+
+.doshas-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.doshas-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 80px;
+}
+
+.doshas-intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.doshas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.dosha-card {
+  background: #fff;
+  padding: 48px 36px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(26, 60, 52, 0.04);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.dosha-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(26, 60, 52, 0.08);
+}
+
+.dosha-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.dosha-name {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin-bottom: 6px;
+  color: var(--color-green-deep);
+}
+
+.dosha-sub {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-green-light);
+  margin-bottom: 24px;
+}
+
+.dosha-desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  font-weight: 300;
+}
